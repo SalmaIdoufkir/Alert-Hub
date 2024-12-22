@@ -1,0 +1,360 @@
+/* Global Styles */
+:root {
+  --primary-color: #BA1921; /* Red color */
+  --secondary-color: #F39C12; /* Gold color */
+  --accent-color: #2980B9; /* Blue color */
+  --background-color: #2C3E50; /* Dark background */
+  --text-color: #000000; /* Light text */
+  --white: #FFFFFF;
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  --shadow-heavy: rgba(0, 0, 0, 0.3);
+  --highlight-color: #E74C3C; /* Lighter Red */
+  --highlight-color-light: #E6B0B0; /* Light pinkish-red */
+}
+
+body {
+  /* background-color: var(--background-color); */
+  color: var(--text-color);
+  line-height: 1.4;
+  font-size: 14px;
+  height: 100%;
+}
+
+.emergency-guide {
+  width: 100%;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  background: var(--white);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px var(--shadow-heavy);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.guide-title {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.filter-label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.filter-select {
+  padding: 8px;
+  font-size: 1rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s ease;
+  background-color: var(--white);
+}
+
+.filter-select:hover {
+  border-color: var(--accent-color);
+}
+
+/* General Tip Section */
+.general-tip {
+  background: var(--primary-color);
+  color: var(--white);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px var(--shadow-light);
+  animation: slideIn 1s ease-in-out;
+}
+
+.general-tip strong {
+  margin-right: 8px;
+}
+
+.tip-icon {
+  margin-right: 8px;
+  color: var(--highlight-color);
+}
+
+/* Case Cards */
+.cases-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 8px;
+  
+}
+
+.case-card {
+  background: var(--white);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px var(--shadow-heavy);
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.case-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px var(--shadow-heavy);
+}
+
+.case-title {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.steps-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.step-item {
+  background: #f9f9f9;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px var(--shadow-light);
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.step-item:hover {
+  background: var(--highlight-color-light);
+  cursor: pointer;
+}
+
+.media-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.media-image {
+  width: 100%;
+  height: auto;
+  max-width: 75%;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px var(--shadow-light);
+  transition: transform 0.3s ease;
+}
+
+.media-image:hover {
+  transform: scale(1.05);
+}
+
+.media-video {
+  width: 100%;
+  max-width: 85%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--shadow-light);
+}
+
+/* Zoom Modal */
+.zoom-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: opacity 0.3s ease;
+}
+
+.zoom-content {
+  position: relative;
+  background: var(--white);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px var(--shadow-light);
+  max-width: 80%;
+  max-height: 70vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zoom-content img,
+.zoom-content video {
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px var(--shadow-light);
+  transition: background-color 0.3s ease;
+}
+
+.close-btn:hover {
+  background: var(--highlight-color);
+}
+
+/* Case Tip */
+.case-tip {
+  background: #f3f4f6;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px var(--shadow-light);
+}
+
+.case-tip strong {
+  font-weight: bold;
+}
+
+.case-tip .tip-icon {
+  color: var(--secondary-color);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(15px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+
+  .emergency-guide {
+    padding: 15px;
+  }
+
+  .guide-title {
+    font-size: 1.6rem;
+  }
+
+  .filter-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .filter-label {
+    font-size: 0.9rem;
+  }
+
+  .filter-select {
+    font-size: 0.9rem;
+    padding: 6px;
+  }
+
+  .general-tip {
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+  .case-title {
+    font-size: 1.2rem;
+  }
+
+  .step-item {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .media-image,
+  .media-video {
+    max-width: 90%;
+  }
+
+  .zoom-content img,
+  .zoom-content video {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 10px;
+  }
+
+  .guide-title {
+    font-size: 1.4rem;
+  }
+
+  .filter-select {
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+
+  .general-tip {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .case-title {
+    font-size: 1rem;
+  }
+
+  .step-item {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .media-image,
+  .media-video {
+    max-width: 100%;
+  }
+
+  .zoom-content img,
+  .zoom-content video {
+    width: 100%;
+  }
+}

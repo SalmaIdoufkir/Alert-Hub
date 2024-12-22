@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap');
+
+/* General container styles */
+.container {
+  font-family: 'Montserrat Alternates', sans-serif;
+  text-align: center;
+    padding-top: 20px;
+    background-color: #f9f9f9;
+    margin: 20px;
+    min-height: 500px;
+    overflow-y: auto; /* ou scroll pour plus de contrôle */
+}
+
+  
+  
+  
+  
+  /* Header styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Location container styles */
+  .locationContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .locationIcon {
+    font-size: 30px;
+    color: #BD1723;
+  }
+  
+  /* Unit toggle styles */
+  .unitToggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .activeUnit {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .inactiveUnit {
+    font-weight: normal;
+    color: #999;
+  }
+  
+  /* Toggle button styles */
+  .toggleButton {
+    width: 50px;
+    height: 20px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #BD1723, #ffe8d6);
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+  }
+  
+  .toggleCircle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #333;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Main container styles */
+  .mainContainer {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 20px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100%; /* ou une hauteur fixe en pixels si nécessaire */
+    overflow-y: auto; /* ou scroll */
+}
+
+  
+  /* Weather card styles */
+  .newWeatherCard {
+    flex: 1;
+    background: linear-gradient(145deg, #2d2d2d, #1f1f1f);
+    color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    min-width: 300px;
+  /* max-width: 50%; */
+  margin-right: 20px;
+  line-height: 35px;
+  
+  }
+  
+  /* Card header styles */
+  .headerC {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  
+  .cityName {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .countryName {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Card body styles */
+  
+  /* Weather info styles */
+  .weatherInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .weatherIcon {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .temperature {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .description {
+    text-transform: capitalize;
+    color: #555;
+  }
+  
+  /* Card footer styles */
+  .cardFooter {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  /* Daily forecast styles */
+  .dailyForecast {
+    flex: 1;
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+  /* max-width: 50%; */
+  height: 300px;
+  
+  }
+  
+  /* Hourly forecast styles */
+  /* Hourly forecast styles */
+  .hourlyForecast {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px;
+    margin-bottom: 30px;
+    overflow-x: auto; /* Activer le défilement horizontal */
+    flex-wrap: nowrap; /* Empêche le retour à la ligne des éléments */
+    scroll-snap-type: x mandatory; /* Optionnel : défilement fluide */
+  }
+  
+  /* Masquer la scrollbar pour les navigateurs WebKit */
+  .hourlyForecast::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Masquer la scrollbar pour Firefox */
+  .hourlyForecast {
+    scrollbar-width: none; /* Firefox */
+  }
+  
+
+/* Style de chaque élément dans les prévisions horaires */
+.forecastItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 80px; /* Taille fixe de chaque élément */
+  max-width: 100%; /* Empêche les éléments de dépasser */
+  background: linear-gradient(to bottom, #b8242e, #a3a3a3);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: white;
+  font-family: 'Montserrat Alternates', sans-serif;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Ajout de transition pour l'animation */
+}
+
+/* Animation au survol */
+.forecastItem:hover {
+  transform: translateY(-10px); /* Déplace légèrement l'élément vers le haut */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Ajoute une ombre portée plus grande */
+}
+
+/* Pour ajuster la taille de l'icône météo lors du survol */
+.forecastItem:hover .weatherIcon {
+  transform: scale(1.1); /* Agrandit légèrement l'icône */
+}
+
+  .forecastTime {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .weatherIcon {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .forecastTemp {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  
+

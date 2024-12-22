@@ -1,0 +1,55 @@
+.footer {
+  width: calc(100% - 250px); /* Ajuster la largeur en excluant la largeur du Sidebar */
+  background-color: #000; /* Fond noir */
+    color: white;
+    text-align: center;
+    /* align-items: center; */
+    padding: 20px 0;
+    border-top: 1px solid #444; /* Ligne grise en haut */
+    margin-top: auto; 
+    margin-left: 250px; /* Laisser de l'espace pour le Sidebar */
+    margin-bottom: 0;
+    /* position: fixed; */
+    z-index: 1000;
+    }
+    .footer.collapsed {
+      /* left: 80px; Ajuster la position du header lorsque le sidebar est réduit */
+  width: calc(100% - 80px);
+  margin-left: 80px; /* largeur réduite du sidebar */
+    }
+  .footer p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  .footer a {
+    color: #BD1723; /* Rouge vif pour les liens */
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+  }
+  
+  .social-links {
+    margin-top: 10px;
+  }
+  
+  .social-links span {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #fff; /* Blanc au survol */
+  }
+  

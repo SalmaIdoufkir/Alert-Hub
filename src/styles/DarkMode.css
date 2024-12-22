@@ -1,0 +1,91 @@
+/* Style de base pour le mode clair */
+body[data-theme="light"] {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Style pour le mode sombre */
+body[data-theme="dark"] {
+  background-color: #333;
+  color: #f9f9f9;
+}
+
+/* Conteneur principal du composant DarkMode */
+.dark_mode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* Style pour la checkbox */
+.dark_mode_input {
+  display: none;
+}
+
+/* Style pour l'étiquette du bouton de bascule */
+.dark_mode_label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Conteneur du bouton de bascule */
+.dark_mode_label::before {
+  content: "";
+  width: 34px;
+  height: 20px;
+  border-radius: 50px;
+  background-color: #ccc;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+/* Cercle du bouton de bascule */
+.dark_mode_label::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s;
+}
+
+/* Quand la checkbox est cochée, changer la couleur et déplacer le cercle */
+.dark_mode_input:checked + .dark_mode_label::before {
+  background-color: #4caf50;
+}
+
+.dark_mode_input:checked + .dark_mode_label::after {
+  transform: translateX(14px);
+}
+
+/* Ajout d'une icône de soleil et de lune pour le basculement */
+.dark_mode_label svg {
+  margin-right: 8px;
+}
+
+.dark_mode_label .moon {
+  display: none;
+}
+
+.dark_mode_input:checked + .dark_mode_label .moon {
+  display: none;
+}
+
+.dark_mode_input:not(:checked) + .dark_mode_label .sun {
+  display: none;
+}
+
+.dark_mode_input:checked + .dark_mode_label .sun {
+  display: block;
+}
+
+.dark_mode_input:not(:checked) + .dark_mode_label .moon {
+  display: block;
+}

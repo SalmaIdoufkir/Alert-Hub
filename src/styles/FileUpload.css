@@ -1,0 +1,81 @@
+.file-upload-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+  }
+  
+  .file-upload-label {
+    display: inline-block;
+    cursor: pointer;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%; /* Par défaut, prend 80% de la largeur de l'écran */
+    max-width: 400px; /* Ne dépasse pas 400px */
+    margin: 10px auto;
+    text-align: center;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+  }
+  
+  .file-upload-label:hover {
+    border-color: #007bff;
+  }
+  
+  .upload-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .upload-icon {
+    font-size: 24px;
+    color: #007bff;
+  }
+  
+  .file-input {
+    display: none; /* Cache l'input natif */
+  }
+  
+  .file-upload-note {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  /* Responsivité */
+@media (max-width: 768px) {
+    .file-upload-label {
+      padding: 15px;
+      font-size: 14px;
+      max-width: 90%; /* Réduit la largeur pour éviter qu'il ne prenne toute la largeur */
+      margin: 0 auto; /* Centre l'élément */
+    }
+  
+    .upload-icon {
+      font-size: 20px;
+    }
+  
+    .file-upload-note {
+      font-size: 10px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .file-upload-label {
+      padding: 10px;
+      font-size: 12px;
+      max-width: 100%; /* Réduction supplémentaire pour les très petits écrans */
+    }
+  
+    .upload-icon {
+      font-size: 18px;
+    }
+  }

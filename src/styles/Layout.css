@@ -1,0 +1,151 @@
+/* Layout Container */
+.layout {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+
+/* Header Styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 250px; /* Laisser de l'espace pour le Sidebar */
+  width: calc(100% - 250px); /* Ajuster la largeur en excluant la largeur du Sidebar */
+  height: 60px;
+  background-color: #000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  z-index: 1000;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease; /* Transition pour le déplacement du header */
+}
+.title.small {
+  font-size: 1rem; /* Réduit la taille du texte */
+}
+.title.large {
+  font-size: 1.5rem; /* Taille normale du texte */
+}
+
+.header.collapsed {
+  left: 80px; /* Ajuster la position du header lorsque le sidebar est réduit */
+  width: calc(100% - 80px); /* Ajuster la largeur en excluant la largeur réduite du Sidebar */
+}
+/* Styliser le lien React Router */
+/* Notification icon container */
+/* Notification icon container */
+.notification-icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem; /* Icon size */
+  color: white; /* Ensure the icon remains white */
+  padding: 10px; /* Added padding for better fit */
+  text-decoration: none; /* Prevent underline on link */
+  position: relative; /* Positioning context for notification count */
+  width: 50px; /* Set width for the container */
+  height: 50px; /* Set height for the container */
+  border-radius: 50%; /* Circular shape for the container */
+  background-color: #BD1723; /* Background color for the entire container */
+  display: flex; /* Use flexbox to center the icon */
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px; /* Add space from the right */
+}
+
+/* Visited link state */
+.notification-icon:visited {
+  color: white !important; /* Force the color to remain white even after visiting */
+}
+
+/* Hover effect on the icon */
+.notification-icon:hover {
+  opacity: 0.8; /* Slightly reduce opacity on hover */
+}
+
+/* Notification link styling */
+.notification-link {
+  text-decoration: none; /* Prevent underline on link */
+  color: white; /* Ensure icon remains white */
+  display: inline-flex; /* Allow the icon to be centered inline */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hover effect on the notification link */
+.notification-link:hover {
+  color: white; /* Stay white on hover for consistency */
+}
+
+/* Notification count (badge) styling */
+.notification-count {
+  position: absolute;
+  top: -5px; /* Position the badge slightly above */
+  right: -5px; /* Position the badge slightly to the right */
+  background-color: #f8d7da; /* Light background for the badge */
+  color: #ba1921; /* Dark text color */
+  border-radius: 50%;
+  width: 20px; /* Slightly larger to ensure it's easily visible */
+  height: 20px; /* Same as width for circular shape */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem; /* Font size slightly adjusted */
+  font-weight: bold; /* Make the number bold */
+  z-index: 1; /* Ensure the badge is on top */
+}
+
+
+/* Sidebar Styles */
+
+
+/* Content Section */
+.content {
+  margin-left: 250px;
+  margin-top: 60px;
+  background-color: #f9f9f9;
+  height: calc(100vh - 60px);
+  flex-direction: column;
+  overflow-y: auto; /* Enable vertical scrolling */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  transition: margin-left 0.3s ease; /* Smooth transition for margin changes */
+}
+
+/* Hide scrollbar for Webkit browsers (e.g., Chrome, Safari) */
+.content::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  gap: 20px;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  font-family: 'Inter', sans-serif;
+  transition: width 0.3s ease; /* Transition pour la réduction de la largeur */
+}
+
+.sidebar.collapsed {
+  width: 80px;
+}
+.sidebar.collapsed + .content {
+  margin-left: 80px; /* Ajuster la marge lorsque le sidebar est réduit */
+}
+.sidebar.collapsed + .header {
+  margin-left: 80px; /* Ajuster la marge lorsque le sidebar est réduit */
+}

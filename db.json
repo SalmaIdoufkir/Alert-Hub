@@ -1,0 +1,148 @@
+{
+  "incidents": [
+    {
+      "id": 1,
+      "category": "Naturelle",
+      "subtype": "Séisme",
+      "description": "Un puissant séisme a frappé le centre du pays, les autorités promettent tous les moyens nécessaires pour venir en aide aux victimes.",
+      "date": "2024-09-15T14:30:00Z",
+      "location": "Taroudant",
+      "image": "/assets/seisme.jpg",
+      "video": "/assets/seisme.mp4",
+      "latitude": 30.4703,
+      "longitude": -8.8779,
+      "user": {
+        "name": "Assia EL MOHADI",
+        "avatar": "/assets/avatar.jpg"
+      }
+    },
+    {
+      "id": 2,
+      "category": "Naturelle",
+      "subtype": "Inondation",
+      "description": "Des pluies torrentielles ont causé des inondations à Ouarzazat.",
+      "date": "2024-11-05T10:00:00Z",
+      "location": "Ouarzazat",
+      "image": "/assets/inondation.jpg",
+      "video": "/assets/inondation.mp4",
+      "latitude": 30.9352,
+      "longitude": -6.8833,
+      "user": {
+        "name": "Mariam DOUCH",
+        "avatar": "/assets/avatar.jpg"
+      }
+    },
+    {
+      "id": 3,
+      "category": "Naturelle",
+      "subtype": "Incendie de forêt",
+      "description": "Un incendie de forêt s'est déclaré dans la région de Chefchaoun.",
+      "date": "2024-07-22T16:00:00Z",
+      "location": "Chefchaoun",
+      "image": "/assets/incendie.jpg",
+      "video": "/assets/incendie.mp4",
+      "latitude": 35.1704,
+      "longitude": -5.2674,
+      "user": {
+        "name": "Omar EL JOUHARI",
+        "avatar": "/assets/avatar.jpg"
+      }
+    },
+    {
+      "id": 4,
+      "category": "Naturelle",
+      "subtype": "Tempête de sable",
+      "description": "Une tempête de sable a bloqué plusieurs routes dans le sud du Maroc.",
+      "date": "2024-07-22T16:00:00Z",
+      "location": "Marrakech",
+      "image": "/assets/tempete.jpg",
+      "video": "/assets/tempete.mp4",
+      "latitude": 31.6295,
+      "longitude": -7.9811,
+      "user": {
+        "name": "Youssef EL HASSANI",
+        "avatar": "/assets/avatar.jpg"
+      }
+    },
+    {
+      "id": 5,
+      "category": "Non naturelle",
+      "subtype": "Effondrement de bâtiment",
+      "description": "Effondrement d’une partie d’un bâtiment abritant une usine textile à Casablanca, causant la mort de six ouvriers.",
+      "date": "2023-06-08T08:00:00Z",
+      "location": "Casablanca, zone industrielle de Tit Mellil",
+      "image": "/assets/effondrement-usine.jpg",
+      "video": "/assets/effondrement-usine.mp4",
+      "latitude": 33.5587,
+      "longitude": -7.5924,
+      "user": {
+        "name": "Fatima ZAHRA",
+        "avatar": "/assets/avatar.jpg"
+      }
+    },
+    {
+      "id": 6,
+      "category": "Non naturelle",
+      "subtype": "Explosion de gaz",
+      "description": "Une fuite de gaz dans une usine de Mohammedia a entraîné une explosion massive, causant des pertes matérielles et plusieurs blessés.",
+      "date": "2022-12-22T12:00:00Z",
+      "location": "Mohammedia",
+      "image": "/assets/explosion-gaz.jpg",
+      "video": "/assets/explosion-gaz.mp4",
+      "latitude": 33.6872,
+      "longitude": -7.3813,
+      "user": {
+        "name": "Nabil RAHMANI",
+        "avatar": "/assets/avatar.jpg"
+      }
+    },
+    {
+      "id": 7,
+      "category": "Non naturelle",
+      "subtype": "Effondrement d'immeuble",
+      "description": "Un immeuble vétuste situé à Casablanca s'est effondré en raison de l'absence de rénovations.",
+      "date": "2020-07-15T18:00:00Z",
+      "location": "Casablanca",
+      "image": "/assets/effondrement-immeuble.jpg",
+      "video": "/assets/effondrement-immeuble.mp4",
+      "latitude": 33.5899,
+      "longitude": -7.6039,
+      "user": {
+        "name": "Samira OUARDI",
+        "avatar": "/assets/avatar.jpg"
+      }
+    },
+    {
+      "id": 8,
+      "category": "Non naturelle",
+      "subtype": "Braquage bancaire",
+      "description": "Cambriolage armé dans une agence bancaire à Tanger, entraînant plusieurs blessés et pertes financières.",
+      "date": "2020-06-10T10:00:00Z",
+      "location": "Tanger",
+      "image": "/assets/braquage-banque.jpg",
+      "video": "/assets/braquage-banque.mp4",
+      "latitude": 35.7631,
+      "longitude": -5.7989,
+      "user": {
+        "name": "Ahmed BOUKHARI",
+        "avatar": "/assets/avatar.jpg"
+      }
+    },
+    {
+      "id": 9,
+      "category": "Non naturelle",
+      "subtype": "Violence des supporters",
+      "description": "Des supporters du Raja ont attaqué des supporters du Wydad, provoquant des violences entre les ultras.",
+      "date": "2021-03-12T20:00:00Z",
+      "location": "Casablanca",
+      "image": "/assets/violence-ultras.jpg",
+      "video": "/assets/violence-ultras.mp4",
+      "latitude": 33.5731,
+      "longitude": -7.5898,
+      "user": {
+        "name": "Hassan EL MOKRI",
+        "avatar": "/assets/avatar.jpg"
+      }
+    }
+  ]
+}

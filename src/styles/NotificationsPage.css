@@ -1,0 +1,245 @@
+/* General Container */
+.notifications-container {
+    background-color: #ffffff; /* White background */
+    padding: 40px 20px;
+    min-height: 100vh;
+    color: #000000; /* Black text color */
+  }
+  
+  /* Title */
+  .notiftitle {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #BA1921; /* Red theme color */
+  }
+  
+  /* Bell Icon */
+  .icon-bell {
+    margin-right: 10px;
+    color: #BA1921; /* Red color for bell icon */
+  }
+  
+  /* Categories (Tabs) */
+  .categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  /* Category Button */
+  .category-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #3333339a; /* Dark gray for default */
+    color: #fff;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .category-button:hover {
+    background-color: #BA1921; /* Hover effect - theme color */
+    transform: scale(1.1);
+  }
+  
+  .active-category {
+    background-color: #BA1921; /* Active state - red */
+    transform: scale(1.2);
+  }
+  
+  /* Notification Grid */
+ /* Notification Grid */
+.notification-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Reduce gap between cards */
+    justify-content: center;
+  }
+  
+  /* Notification Card */
+  .notification-card {
+    background-color: #f9f9f9; /* Light neutral background for card */
+    padding: 15px; /* Reduce padding for smaller cards */
+    border-radius: 8px; /* Slightly smaller rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 280px; /* Reduce width for smaller cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px; /* Reduce margin */
+    text-align: center;
+  }
+  
+  /* Hover Effect on Card */
+  .notification-card:hover {
+    transform: translateY(-5px); /* Smaller hover effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
+  }
+  
+  /* Notification Content */
+  .notification-content {
+    text-align: left;
+  }
+  
+  .notification-title {
+    font-weight: bold;
+    font-size: 1.2rem; /* Smaller font size for title */
+    color: #333333; /* Dark text for better readability */
+    margin-bottom: 10px; /* Less space between title and description */
+  }
+  
+  .notification-description {
+    color: #555555; /* Medium gray for description text */
+    margin: 5px 0; /* Less margin between description and metadata */
+  }
+  
+  .notification-meta {
+    color: #777777; /* Lighter gray for metadata */
+    font-size: 0.8rem; /* Smaller font size for metadata */
+  }
+  
+  /* Divider */
+  .divider {
+    margin: 15px 0;
+    border: 1px solid #BA1921; /* Light gray divider */
+  }
+  
+  /* Category Colors */
+  .urgent {
+    background-color: #f8d7da; /* Light red for urgent notifications */
+    border-left: 5px solid #BA1921; /* Red accent on the left */
+  }
+  
+  .warning {
+    background-color: #fff3cd; /* Light yellow for warning */
+    border-left: 5px solid #e0a800; /* Yellow accent */
+  }
+  
+  .info {
+    background-color: #cce5ff; /* Soft light blue for informational messages */
+    border-left: 5px solid #007bff; /* Blue accent */
+  }
+  
+  .natural {
+    background-color: #d4edda; /* Light green for natural events */
+    border-left: 5px solid #28a745; /* Green accent */
+  }
+  
+  /* Action Buttons */
+  .view-details-button, .dismiss-button {
+    background-color: #BA1921; /* Red theme for View Details */
+    color: #fff;
+    border: none;
+    padding: 6px 12px; /* Smaller padding for buttons */
+    border-radius: 4px; /* Smaller border radius */
+    font-size: 0.85rem; /* Smaller font size */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 8px; /* Reduce space between buttons */
+  }
+  
+  /* Hover Effects */
+  .view-details-button:hover {
+    background-color: #910f18; /* Darker red for hover effect */
+  }
+  
+  .dismiss-button {
+    background-color: #555; /* Dark gray for Dismiss */
+    color: #fff;
+    border: 1px solid #444;
+  }
+  
+  .dismiss-button:hover {
+    background-color: #444;
+    border-color: #666;
+  }
+  
+  /* Center Buttons */
+  .notification-card .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px; /* Smaller gap between buttons */
+    margin-top: 15px; /* Reduce space from content */
+  }
+  
+  /* Empty State */
+  .no-notifications {
+    text-align: center;
+    font-size: 0.9rem; /* Smaller font size */
+    color: #777; /* Light gray text for no notifications */
+  }
+  
+ .sort-options {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.sort-button {
+  background: none;
+  border: none;
+  color: #ba1921;
+  font-size: 2rem; /* Increased size for better visibility */
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease; /* Adding transition effect */
+  display: inline-block;
+  padding: 5px;
+}
+
+.sort-button:hover {
+  transform: rotate(90deg); /* Slight rotate on hover for a fun effect */
+  color: #e60000; /* Darker red on hover */
+}
+
+.sort-button:focus {
+  outline: none; /* Remove outline on focus */
+}
+
+.sort-menu {
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+  border-radius: 8px;
+  padding: 12px 15px;
+  top: 60px;
+  right: 20px;
+  width: 150px; /* Fixed width for consistency */
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Increased gap for better readability */
+  opacity: 0; /* Initially hidden */
+  transform: translateY(-10px); /* Hidden above the button */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for showing */
+}
+
+.sort-menu.show {
+  opacity: 1;
+  transform: translateY(0); /* Slide into view */
+}
+
+.sort-menu button {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  color: #333; /* Slightly darker text for better contrast */
+}
+
+.sort-menu button:hover {
+  background-color: #ba1921;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Light shadow on hover for depth */
+}
+
+.sort-menu button:focus {
+  outline: none; /* Remove outline on focus */
+}
+
+.sort-menu button:active {
+  transform: scale(0.98); /* Slight scale effect on button click */
+}

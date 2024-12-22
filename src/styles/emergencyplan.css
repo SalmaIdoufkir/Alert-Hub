@@ -1,0 +1,316 @@
+/* Container Styles */
+.emergency-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+    /* padding: 20px; */
+}
+
+/* Heading */
+.emergency-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Alert Hub Styles */
+.emergency-alert-hub {
+    position: relative;
+    width: 359px;
+    height: 350px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Center Content */
+.emergency-center-content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.emergency-alert-icon {
+    font-size: 1rem;
+    color: #e63946;
+    margin-top: 0.5rem;
+}
+
+/* Emergency Icons */
+/* Emergency Icons */
+.emer-icon {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+/* Emergency Icons */
+
+/* Emergency Icon Circle */
+.emergency-icon-circle {
+    background-color: #bae8e8;
+    width:  55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for icon circles */
+  .emergency-icon-circle:hover {
+    transform: scale(1.2) rotate(15deg); 
+    background-color: #0077b6;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.8), 0 0 50px rgba(0, 119, 182, 0.4);
+    cursor: pointer;
+}
+
+/* After Effect for Extra Glow */
+.emergency-icon-circle::after {
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    border-radius: 50%;
+    background: rgba(0, 168, 255, 0.2);
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+
+  /* Icon Label */
+  .emergency-icon-label {
+    font-size: 20px;
+    
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    color: #333;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Emergency Icon Styles */
+  .emer-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+  
+  .emer-icon .emergency-icon-circle {
+    background-color: #BD1723;
+    font-size: 1.8rem;
+    color: white;
+  }
+  
+  .emer-icon .emergency-icon-label {
+    color: #272343;
+     /* Base color for icon labels */
+  }
+  
+
+
+
+.emergency-icon-circle {
+    background-color: #f1c40f; /* Earthquake Icon */
+}
+
+
+/* Icon Positioning */
+.tsu { top: 5%; left: 10%; }
+.earth { top: -5%; left: 50%; transform: translateX(-50%); }
+.medical { top: 5%; right: 10%; }
+.acc { right: -5%; top: 50%; transform: translateY(-50%); }
+.res { bottom: 5%; right: 10%; }
+.flo { bottom: -12%; left: 50%; transform: translateX(-50%); }
+.v { bottom: -2%; left: 10%; }
+.f { left: -7%; top: 50%; transform: translateY(-50%); }
+
+/* Emergency Logo */
+.emergency-logo {
+    margin-bottom: 20px;
+    width: 250px;
+}
+
+/* Responsive Adjustments */
+
+
+/* Medium Circle Overlay */
+.medium-circle-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .medium-circle {
+    background-color: #BD1723;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  .medium-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+  }
+  /* Emergency Buttons - Vertical Layout */
+.emer-buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center;    /* Center-align buttons */
+    gap: 10px; /* Space between buttons */
+  }
+  
+  .guide-btn,
+  .download-btn {
+    background-color: #ffffff;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    width: 70%; /* Adjust button width */
+    
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .guide-btn:hover {
+    background-color: #000000;
+    color: white;
+  }
+  
+  .download-btn:hover {
+    background-color: #000000;
+    color: white;
+  }
+  
+  /* Medium Circle Updates */
+  .medium-circle {
+    padding: 20px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .medium-icon {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+/* Modern Heading Style */
+.emergency-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000000; /* White text color for contrast */
+    padding: 15px 0;
+    text-align: center;
+    position: relative;
+    display: block;
+    /* No scrolling effect for h2 */
+  }
+  
+  
+  /* Modern Scrolling Message */
+  .emergency-message {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem; /* Slightly larger for visibility */
+    font-weight: 600;
+    color: #fff;
+    background-color: #464646; /* Red background to make it eye-catching */
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    animation: newsTicker 13s linear infinite;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adding depth */
+  }
+  
+  /* Scrolling Effect for the Message */
+  @keyframes newsTicker {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Icon inside the message */
+  .emergency-message .message-icon {
+    margin-right: 15px;
+    font-size: 1.8rem; /* Larger icon for impact */
+    color: #fff; /* Icon color to match the message */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hover effect for the icon */
+  .emergency-message:hover .message-icon {
+    transform: rotate(15deg); /* Slight rotation on hover */
+  }
+  
+  

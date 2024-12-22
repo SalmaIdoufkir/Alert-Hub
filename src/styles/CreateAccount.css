@@ -1,0 +1,198 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap');
+.create-account-page {
+    font-family: 'Montserrat Alternates', sans-serif;
+  }
+  
+/* Boutons de connexion sociaux */
+.create-account-social-login {
+    display: flex; /* Affiche les éléments en ligne */
+    justify-content: center; /* Centre les boutons horizontalement */
+    gap: 100px; /* Espace entre les boutons */
+    margin-bottom: 20px; /* Espacement inférieur */
+  }
+  
+  .create-account-social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .create-account-social-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px; /* Espace entre l'icône et le texte */
+  }
+  
+  .create-account-social-button.google {
+    border-color: #ddd;
+    font-family: 'Montserrat Alternates', sans-serif;
+
+  }
+  
+  .create-account-social-button.facebook {
+    border-color: #ddd;
+    font-family: 'Montserrat Alternates', sans-serif;
+
+  }
+  
+  .create-account-social-button:hover {
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+    .create-account-social-button.facebook img {
+    background-color: #1877f2;
+    border-radius: 50%;
+    padding: 2px;
+  }
+  
+  /* Séparateur -OR- */
+  .create-account-separator {
+    text-align: center;
+    color: #aaa;
+    margin: 20px 0;
+    font-size: 14px;
+  }
+  
+  /* Formulaire */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  form input {
+    /* width: 95%; */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  form input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .create-account-btn {
+    background-color: #c8102e;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Montserrat Alternates', sans-serif;
+
+  }
+  input::placeholder {
+    font-family: 'Montserrat Alternates', sans-serif; /* Appliquer la police */
+    color: #aaa; /* Couleur du placeholder (facultatif) */
+    font-size: 14px; /* Taille de la police (ajustez selon vos besoins) */
+  }
+  
+  .create-account-btn:hover {
+    background-color: #a30c24;
+  }
+  
+  /* Lien Sign In */
+  .create-account-signin-link {
+    text-align: right;
+    margin-top: 10px;
+  }
+  /* Augmenter l'espace entre les éléments du formulaire */
+.create-account-form-container form input {
+    margin-bottom: 20px; /* Augmente la distance entre les éléments */
+}
+
+.create-account-form-container form button {
+    margin-top: 10px; /* Ajoute de l'espace au-dessus du bouton */
+}
+
+  
+  .create-account-signin-link a {
+    color: #c8102e;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .create-account-signin-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Structure générale */
+  .create-account-page {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .create-account-left-panel {
+    flex: 1;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .create-account-left-panel h2 {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: normal;
+  }
+  
+  .create-account-alert-logo span {
+    font-size: 100px;
+  }
+  
+  .create-account-right-panel {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .create-account-form-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+
+  }
+  
+  .create-account-form-container h2 {
+    text-align: left;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  .create-account-create-account-page {
+    position: relative; /* Nécessaire pour positionner l'enfant absolu */
+  }
+  
+  .create-account-header-logo {
+    position: absolute;
+    top: 20px; /* Ajustez pour votre design */
+    right: 20px; /* Ajustez pour votre design */
+  }
+  
+  .create-account-header-logo img {
+    width: 170px; /* Ajustez la taille selon vos besoins */
+    height: auto;
+  }
+  
