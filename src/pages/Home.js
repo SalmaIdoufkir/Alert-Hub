@@ -4,6 +4,8 @@ import "leaflet/dist/leaflet.css";
 import Layout from "../components/Layout";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import L from 'leaflet';
+import AlertBox from '../components/AlertBox'
+import RiskIndicator from '../components/RiskIndicator'
 
 
 const Home = () => {
@@ -15,15 +17,16 @@ const Home = () => {
     setComment(""); // Réinitialise le commentaire après soumission
     setShowTextArea(false); // Cache la zone de texte après soumission
   };
-  const customIcon = new L.Icon({
-      iconUrl: require('leaflet/dist/images/marker-icon.png'),
-      iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
+  const personIcon = L.icon({
+    iconUrl: "https://cdn-icons-png.flaticon.com/512/684/684908.png", // Pin-style icon with transparent background
+    iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
       shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
-      iconSize: [25, 41],
+      iconSize: [35, 41],
       iconAnchor: [12, 41],
       popupAnchor: [1, -34],
       shadowSize: [41, 41],
-    });
+  });
+  
   const [showPosts, setShowPosts] = useState(false);
   const [incidents, setIncidents] = useState([]); // État pour stocker les incidents
   const center = [31.7917, -7.0926]; // Centre par défaut pour la carte (Maroc)
@@ -62,11 +65,23 @@ const Home = () => {
 
   {/* Marqueurs dynamiques pour les incidents */}
   {incidents.map((incident) => (
+    
   (incident.latitude && incident.longitude) ? (
+    <React.Fragment key={incident.id}>
+      <Circle
+                  center={[incident.latitude, incident.longitude]}
+                  radius={25000} // Rayon en mètres
+                  pathOptions={{
+                    color: "red",
+                    fillColor: "rgb(252, 7, 7)", // Couleur semi-transparente
+                    fillOpacity: 0.5,
+                  }}
+                />
     <Marker
       key={incident.id}
       position={[incident.latitude, incident.longitude]}
-      icon={customIcon} // Position dynamique
+      icon={personIcon} 
+      // Position dynamique
     >
       <Popup>
   <div
@@ -179,10 +194,15 @@ const Home = () => {
 </Popup>
 
     </Marker>
+    </React.Fragment>
   ) : null
 ))}
 
 </MapContainer>
+<RiskIndicator/>
+
+      {/* Ajouter l'Alerte Dynamique */}
+      <AlertBox incidents={incidents} />
 
         {/* Bouton pour afficher/masquer les publications */}
         <button

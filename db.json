@@ -100,13 +100,13 @@
       "id": 7,
       "category": "Non naturelle",
       "subtype": "Effondrement d'immeuble",
-      "description": "Un immeuble vétuste situé à Casablanca s'est effondré en raison de l'absence de rénovations.",
+      "description": "Un immeuble vétuste situé à Safi s'est effondré en raison de l'absence de rénovations.",
       "date": "2020-07-15T18:00:00Z",
-      "location": "Casablanca",
+      "location": "Safi",
       "image": "/assets/effondrement-immeuble.jpg",
       "video": "/assets/effondrement-immeuble.mp4",
-      "latitude": 33.5899,
-      "longitude": -7.6039,
+      "latitude": 32.3000,
+      "longitude": -9.2400,
       "user": {
         "name": "Samira OUARDI",
         "avatar": "/assets/avatar.jpg"
@@ -134,15 +134,32 @@
       "subtype": "Violence des supporters",
       "description": "Des supporters du Raja ont attaqué des supporters du Wydad, provoquant des violences entre les ultras.",
       "date": "2021-03-12T20:00:00Z",
-      "location": "Casablanca",
+      "location": "Errachidia",
       "image": "/assets/violence-ultras.jpg",
       "video": "/assets/violence-ultras.mp4",
-      "latitude": 33.5731,
-      "longitude": -7.5898,
+      "latitude": 31.9300,
+      "longitude": -4.4200,
+      "user": {
+        "name": "Hassan EL MOKRI",
+        "avatar": "/assets/avatar.jpg"
+      }
+    },
+    {
+      "id": 9,
+      "category": "Non naturelle",
+      "subtype": "Violence des supporters",
+      "description": "Des supporters du Raja ont attaqué des supporters du Wydad, provoquant des violences entre les ultras.",
+      "date": "2021-03-12T20:00:00Z",
+      "location": "Laayoune",
+      "image": "/assets/violence-ultras.jpg",
+      "video": "/assets/violence-ultras.mp4",
+      "latitude": 27.1415,
+      "longitude": -13.2000,
       "user": {
         "name": "Hassan EL MOKRI",
         "avatar": "/assets/avatar.jpg"
       }
     }
+    
   ]
 }

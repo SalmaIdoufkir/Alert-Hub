@@ -86,7 +86,7 @@ const Report = () => {
                   <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' />
                   <Circle 
                     center={position} 
-                    radius={500} 
+                    radius={2000} 
                     color="red"
                     fillColor="red"
                     fillOpacity={0.6}

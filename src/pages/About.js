@@ -217,7 +217,7 @@ const About = () => {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    gap: "200px",
+    gap: "150px",
     marginTop: "50px",
     marginBottom: "70px",
     '@media (max-width: 768px)': {
